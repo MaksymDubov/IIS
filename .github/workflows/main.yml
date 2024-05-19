@@ -20,7 +20,7 @@ jobs:
         node-version: '14'
 
     - name: Install npm dependencies
-      run: npm install
+      run: cd vue-paper-dashboard && npm install
 
     - name: Print finish message
       run: echo "Pipeline finished."
