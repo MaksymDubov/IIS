@@ -19,8 +19,14 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Change dir
+      run: cd vue-paper-dashboard && ls
+
     - name: Install npm dependencies
-      run: cd vue-paper-dashboard && npm install
+      run: cd vue-paper-dashboard && ls
+
+    - name: Run app
+      run: cd vue-paper-dashboard && nmp run dev
 
     - name: Print finish message
       run: echo "Pipeline finished."
